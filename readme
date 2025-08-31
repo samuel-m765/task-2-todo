@@ -1,0 +1,15 @@
+# 📝 Task 2 - Simple To-Do List App
+
+This is a simple **command-line To-Do List application** built with **Node.js** as part of my internship tasks. It allows users to **add**, **view**, and **delete** tasks from the list directly in the terminal.
+
+---
+
+## 🚀 Features
+- ✅ Add new tasks  
+- 📋 View all tasks  
+- 🗑️ Delete tasks by number  
+- Beginner-friendly implementation  
+
+---
+
+## 📂 Project Structure
