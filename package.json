@@ -1,0 +1,23 @@
+{
+  "name": "task-2-todo",
+  "version": "1.0.0",
+  "description": "This is a simple **command-line To-Do List application** built with **Node.js** as part of my internship tasks. It allows users to **add**, **view**, and **delete** tasks from the list directly in the terminal.",
+  "main": "todo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuel-m765/task-2-todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuel-m765/task-2-todo/issues"
+  },
+  "homepage": "https://github.com/samuel-m765/task-2-todo#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
