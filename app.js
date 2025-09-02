@@ -9,6 +9,9 @@ let todos = [];
 // Add a task
 app.post("/todos", (req, res) => {
   const { task } = req.body;
+  if (!task) {
+    return res.status(400).json({ error: "⚠️ Task is required" });
+  }
   todos.push(task);
   res.json({ message: `✅ Task added: "${task}"`, todos });
 });
@@ -16,6 +19,19 @@ app.post("/todos", (req, res) => {
 // List tasks
 app.get("/todos", (req, res) => {
   res.json({ todos });
+});
+
+// Update task by index
+app.put("/todos/:index", (req, res) => {
+  const index = parseInt(req.params.index);
+  const { task } = req.body;
+
+  if (index >= 0 && index < todos.length && task) {
+    todos[index] = task;
+    res.json({ message: `✏️ Task updated at index ${index}`, todos });
+  } else {
+    res.status(400).json({ error: "⚠️ Invalid task index or missing task" });
+  }
 });
 
 // Delete task by index
@@ -29,6 +45,6 @@ app.delete("/todos/:index", (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`To-Do API running on http://localhost:${port}`);
+app.listen(port, "0.0.0.0", () => {
+  console.log(`✅ To-Do API running on port ${port}`);
 });
