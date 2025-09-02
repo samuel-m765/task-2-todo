@@ -1,10 +1,10 @@
 {
   "name": "task-2-todo",
   "version": "1.0.0",
-  "description": "This is a simple **command-line To-Do List application** built with **Node.js** as part of my internship tasks. It allows users to **add**, **view**, and **delete** tasks from the list directly in the terminal.",
-  "main": "todo.js",
+  "description": "A simple To-Do List API built with Node.js and Express as part of my internship tasks. It allows users to add, view, update, and delete tasks.",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
